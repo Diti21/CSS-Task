@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        /* Custom Background for Body */
+        body {
+            background-color: #f0f0f5;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Split Background Color within the Card */
+        #assignment {
+            background: linear-gradient(to bottom right, #001f3f 50%, #f0f0f5 50%);
+            padding: 3rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .rotate:hover {
+            animation: rotate360 1s linear;
+        }
+        @keyframes rotate360 {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        /* Title Positioning */
+        .service-title {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            font-size: 2rem;
+        }
+        /* Circular icon container with border */
+        .icon-container {
+            width: 80px;
+            height: 80px;
+            background-color: #f0f0f5; /* Light grey */
+            border: 3px solid #001f3f; /* Navy blue outline */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        /* Link Color */
+        .service-link {
+            color: #001f3f; /* Navy blue for "Explore This Service" link */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="assignment" class="w-full max-w-5xl mx-4 my-8 text-white rounded-lg shadow-lg">
+        <h2 class="service-title font-bold">Our Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
+            <!-- Service Card 1 -->
+            <div class="relative p-6 bg-white rounded-lg shadow-md text-center rotate transform transition duration-500 hover:scale-105">
+                <div class="icon-container">
+                    <img src="https://img.icons8.com/color/48/000000/alarm--v1.png" alt="Emergency Plumbing Icon" class="w-12 h-12">
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-black mt-8">Emergency Plumbing Services</h3>
+                <p class="text-gray-600 mb-4">Our plumbers are ready to go 24/7 for emergencies - including nights, weekends, and holidays.</p>
+                <a href="#" class="service-link">Explore This Service ></a>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="relative p-6 bg-white rounded-lg shadow-md text-center rotate transform transition duration-500 hover:scale-105">
+                <div class="icon-container">
+                    <img src="https://img.icons8.com/color/48/000000/plumber.png" alt="Plumbing Icon" class="w-12 h-12">
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-black mt-8">Plumbing and Drains</h3>
+                <p class="text-gray-600 mb-4">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+                <a href="#" class="service-link">Explore This Service ></a>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="relative p-6 bg-white rounded-lg shadow-md text-center rotate transform transition duration-500 hover:scale-105">
+                <div class="icon-container">
+                    <img src="https://img.icons8.com/color/48/000000/water.png" alt="Water Damage Icon" class="w-12 h-12">
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-black mt-8">Water Damage</h3>
+                <p class="text-gray-600 mb-4">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+                <a href="#" class="service-link">Explore This Service ></a>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="relative p-6 bg-white rounded-lg shadow-md text-center rotate transform transition duration-500 hover:scale-105">
+                <div class="icon-container">
+                    <img src="https://img.icons8.com/color/48/000000/water-heater.png" alt="Water Heater Icon" class="w-12 h-12">
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-black mt-8">Water Heaters</h3>
+                <p class="text-gray-600 mb-4">Trust Roto-Rooter for repair and replacement of gas, electric, and tankless water heaters.</p>
+                <a href="#" class="service-link">Explore This Service ></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
